@@ -1,20 +1,57 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Male Hormone Pathways
 
-# Run and deploy your AI Studio app
+An interactive visualization of male hormone pathways, steroidogenesis, and the effects of inhibitors like Finasteride and stress.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/14hvNs9RkUeCvMNrlmjhW1eqhUyrvAi4h
+- **Interactive Map**: Visualize the conversion pathways from Cholesterol to DHT and Estrogen.
+- **Simulations**: Toggle "Finasteride" to see how 5-alpha reductase inhibition affects DHT levels. Toggle "Stress" to see the "Pregnenolone Steal" and its impact on androgens.
+- **Detailed Info**: Click on any hormone or enzyme to get detailed information about its function and role.
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
 
+- Node.js (v18 or higher recommended)
+- npm (comes with Node.js)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/wirinunwhite/male-hormone-pathways.git
+    cd male-hormone-pathways
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Running Locally
+
+To start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and navigate to `http://localhost:5173` (or the URL shown in your terminal).
+
+### Building for Production
+
+To build the application for deployment:
+
+```bash
+npm run build
+```
+
+The compiled files will be in the `dist` directory.
+
+## Tech Stack
+
+- **React**: UI Library
+- **Vite**: Build tool and dev server
+- **Tailwind CSS**: Styling
+- **TypeScript**: Type safety
+- **Lucide React**: Icons
